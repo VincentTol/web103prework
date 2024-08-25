@@ -35,7 +35,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-👉🏿<<iframe src="https://giphy.com/embed/InuVFlhYDhqh0t3MRS" width="480" height="307" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/InuVFlhYDhqh0t3MRS">via GIPHY</a></p>
+![Demo GIF](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmdoMTZ1dXB1YmJnMHVmbHdsaGl0Znlra25heHJxbWhkajN5YzMzZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/InuVFlhYDhqh0t3MRS/giphy.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  👉🏿 LiceCap
