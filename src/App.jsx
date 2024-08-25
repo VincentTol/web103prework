@@ -13,10 +13,7 @@ import EditCreator from "./pages/EditCreator";
 //      a) This means if you click on one creator and then navigate 
 //         back to ShowCreators and then paste the url for ViewCreators
 //         you will be loaded to the last creator you opened
-// Possible solution unique url based on username? 
-// Also need way to store which viewer being opened after opening another page
-// Perhaps change URL based on username then fetch the username from database using the url
-// on the navigated page
+
 
 function App() {
  
