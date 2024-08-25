@@ -16,7 +16,7 @@ The following **required** functionality is completed:
 - [x] **Each content creator item includes their name, a link to their channel/page, and a short description of their content**
 - [x] **API calls use the async/await design pattern via Axios or fetch()**
 - [x] **Clicking on a content creator item takes the user to their details page, which includes their name, url, and description**
-- [ ] **Each content creator has their own unique URL**
+- [x] **Each content creator has their own unique URL**
 - [x] **The user can edit a content creator to change their name, url, or description**
 - [x] **The user can delete a content creator**
 - [x] **The user can add a new content creator by entering a name, url, or description and then it is displayed on the homepage**
