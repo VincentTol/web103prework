@@ -12,7 +12,8 @@ const PersonCard = ({ name, url, description, imageURL }) => {
     localStorage.setItem('creatorData', JSON.stringify(creatorData));
     //You can send state parameter in navigate function
     //This is a shallow copy however
-    navigate("/ViewCreator");
+    navigate(`/view-creator/${name}`);
+
   }
   
   return (

@@ -28,7 +28,7 @@ function App() {
           <Route index element = {<ShowCreators />}></Route>
           <Route path="/ShowCreators" element={<ShowCreators />} />
           <Route path="/AddCreator" element={<AddCreator />} />
-          <Route path="/ViewCreator" element={<ViewCreator />} />
+          <Route path="/view-creator/:id" element={<ViewCreator />} />
           <Route path="/EditCreator" element={<EditCreator />} />
 
         </Routes>
