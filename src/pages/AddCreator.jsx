@@ -51,7 +51,7 @@ function AddCreator() {
       <h2>Add Creator</h2>
       <button  onClick= {handleViewCreators}>View Creators</button>
 
-      <form onSubmit={createUser}>
+      <form className="form-container" onSubmit={createUser}>
         <input
           type="text"
           placeholder="Name"

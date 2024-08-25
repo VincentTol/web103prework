@@ -9,13 +9,6 @@ function ShowCreators() {
   const [influencers, setInfluencers] = useState([]);
   const navigate = useNavigate();
 
-  const [tempUser, setTempUser] = useState({
-    name: '',
-    url: '',
-    description: '',
-    imageURL: ''
-  });
-
   useEffect(() => {
     fetchUsers();
   }, [])
@@ -27,22 +20,9 @@ function ShowCreators() {
       setInfluencers(data)
   };
   
-  async function handleDeleteCreator(username){
-    const { error } = await supabase
-    .from('creators')
-    .delete()
-    .eq('name', username);
-
-    if (!error) {
-      setInfluencers((prev) => prev.filter(creator => creator.name !== username));
-    }
-  }
-
   const addCreatorButton = () => {
     navigate("/AddCreator")
   }
-
-  console.log(tempUser);
 
   return (
     <>
@@ -59,7 +39,6 @@ function ShowCreators() {
               url={influencer.url}
               description={influencer.description}
               imageURL={influencer.imageURL}
-              onDelete={handleDeleteCreator}
             />
           ))}
       </div>

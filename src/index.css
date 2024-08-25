@@ -74,6 +74,8 @@ button:focus-visible {
   overflow: hidden; /* Ensures content does not overflow */
   box-sizing: border-box; /* Includes padding and border in the element's total width and height */
   background-color: rgb(165, 195, 197); /* Optional background color */
+  margin-bottom: 10px;
+  gap: 10px;
 }
 
 
@@ -98,6 +100,27 @@ button:focus-visible {
 .person-card p {
   text-align: center;
   font-size: 1.1rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
 }
 
 

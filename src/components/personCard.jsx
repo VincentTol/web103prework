@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 
-const PersonCard = ({ name, url, description, imageURL, onDelete }) => {
+const PersonCard = ({ name, url, description, imageURL }) => {
   const navigate = useNavigate();
 
   function HandleView(){
@@ -23,7 +23,6 @@ const PersonCard = ({ name, url, description, imageURL, onDelete }) => {
         <p>{description}</p>
         <a href={url} target="_blank" rel="noopener noreferrer">Visit Channel</a>
         <button onClick={HandleView}>View Creator</button>
-        <button onClick = {() => onDelete(name)}>Delete Creator</button>
       </div>
     </div>
   );
