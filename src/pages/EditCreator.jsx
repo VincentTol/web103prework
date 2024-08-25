@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { supabase } from "../client";
+import { useNavigate } from "react-router-dom";
 
 function EditCreator(){
     const creatorJSON = localStorage.getItem('creatorData')
     const creatorData = JSON.parse(creatorJSON);
-    
+    const navigate = useNavigate();
+
     const { name, url, description, imageURL } = creatorData;
 
 
@@ -43,6 +45,7 @@ function EditCreator(){
           console.log('Creator updated successfully');
           //Clear the form or show a success message
           setTempUser({ name: '', url: '', description: '', imageURL: '' });
+          navigate("/ShowCreators");
         }
       }
 
@@ -78,7 +81,7 @@ function EditCreator(){
                 value={tempUser.imageURL} // Bind the input value to state
                 onChange={handleAddUser}
                 />
-            <button type='submit'>Add Creator</button>
+            <button type='submit'>Submit</button>
             </form>
 
         </div>
